@@ -22,12 +22,3 @@ function power(base, exponent) {
 function absolute(value) {
     return Math.abs(value);
 }
-module.exports = {
-    add: add,
-    subtract: subtract,
-    multiply: multiply,
-    divide: divide,
-    modulo: modulo,
-    power: power,
-    absolute: absolute,
-};

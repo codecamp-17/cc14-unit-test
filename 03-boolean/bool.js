@@ -1,10 +1,11 @@
-// function for return boolean value
-
 function isEven(number) {
-    return number % 2 === 0;
+    if (number % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
-// more isPrime function
 function isPrime(number) {
     if (number < 2) {
         return false;
@@ -51,12 +52,3 @@ function isValidPassword(password) {
     }
     return true;
 }
-
-module.exports = {
-    isEven: isEven,
-    isPrime: isPrime,
-    isLeapYear: isLeapYear,
-    isAdmin: isAdmin,
-    isPalindrome: isPalindrome,
-    isValidPassword: isValidPassword,
-};

@@ -1,5 +1,3 @@
-// write 4-5 function for dealing with object
-
 function multiplyNumeric(obj, num) {
     for (let key in obj) {
         if (typeof obj[key] === 'number') {
@@ -9,13 +7,12 @@ function multiplyNumeric(obj, num) {
     return obj;
 }
 
-// functino for create object with name of  Product, quantity, price, discount
 function createProduct(name, quantity, price, discount) {
     return {
         name: name,
         quantity: quantity,
         price: price,
-        discount: discount || 0,
+        discount: discount,
     };
 }
 
@@ -46,10 +43,3 @@ function User(name, age, email) {
     this.age = age;
     this.email = email;
 }
-
-module.exports = {
-    multiplyNumeric: multiplyNumeric,
-    createProduct: createProduct,
-    findEmployee: findEmployee,
-    User: User,
-};

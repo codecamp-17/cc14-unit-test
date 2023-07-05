@@ -1,5 +1,3 @@
-// function for test string
-
 function reverseString(str) {
     return str.split('').reverse().join('');
 }
@@ -32,11 +30,3 @@ function isPangram(str) {
     }
     return true;
 }
-
-module.exports = {
-    reverseString: reverseString,
-    capitalize: capitalize,
-    countVowels: countVowels,
-    spamCheck: spamCheck,
-    isPangram: isPangram,
-};
